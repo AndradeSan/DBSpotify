@@ -2,9 +2,9 @@
   "name": "DB2",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "dev": "nodemon src/app.js"
+    "dev": "index.html"
   },
   "keywords": [],
   "author": "",

@@ -9,7 +9,10 @@ const app = express();
 //importing routes
 const customerRoutes = require('./route/customer');
 
-//nuevo
+
+
+/// nuevo2
+
 
 //settings
 
