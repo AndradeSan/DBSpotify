@@ -1,0 +1,50 @@
+
+
+<%- include('partials/_header'); %>
+
+
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-md-7">
+          <table class="table table-bordered table-hover">
+            <thead>
+              <tr>
+                <th>id_Cancion</th>
+                    <th>Nombre_Cancion</th>
+                      <th>Nombre_Albun</th>
+                      <th>Nombre_Artista</th>
+                          <th>Nombre_User</th>
+                            <th>Veces_Escuchada</th>
+                                      <th>Cant_User</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% if (data) { %>
+                <% for (var i = 0; i< data.length; i++) { %>
+                <tr>
+                   <td> <%= data[i].id_canc %></td>
+                      <td> <%= data[i].nombre_canc %></td>
+                      <td> <%= data[i].nombre_alb %></td>
+                      <td> <%= data[i].nombreartistico_art %></td>
+                      <td> <%= data[i].nombre_user %></td>
+                      <td> <%= data[i].VecesEscuchada %></td>
+                        <td> <%= data[i].CantUser %></td>
+                </tr>
+              <% } %>
+
+              <% } %>
+            </tbody>
+          </table>
+        </div>
+          <div class="col-md-5">
+          </div>
+          <button type="submit" class="btn btn-primary">
+          Vista1
+        </button>
+
+    </div>
+
+</div>
+
+
+<%- include('partials/footer'); %>
